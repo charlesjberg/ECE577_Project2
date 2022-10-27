@@ -207,7 +207,7 @@ plot1, = ax.plot(g, h)
 plt.xlabel("x-coordinate", fontsize=11)
 plt.ylabel("y-coordinate", fontsize=11)
 plt.title("Travel Salesman Problem with Genetic Algorithm")
-for m in range(video_frame-1,video_frame):
+for m in range(1,video_frame):
     new_coordinates = getting_new_coordinate(best_coordinates[m], cities_dict)
     aa, bb = zip(*new_coordinates)
     plot1.set_xdata(aa)
